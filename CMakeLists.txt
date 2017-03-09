@@ -29,7 +29,5 @@ set(HEADER_FILES
   include/plog/Formatters/TxtFormatter.h
   )
 
-set(SOURCE_FILES
-   src/main.cpp )
-
 add_library(plog SHARED ${HEADER_FILES} ${SOURCE_FILES})
+set_target_properties(plog PROPERTIES LINKER_LANGUAGE CXX)
